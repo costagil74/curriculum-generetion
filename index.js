@@ -9,3 +9,4 @@
 document.querySelector('#next-page').addEventListener('click', () => {
     document.querySelector('#personal-info-container').style.display = 'none'; 
 })
+
