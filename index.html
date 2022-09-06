@@ -15,10 +15,9 @@
     <h1>curriculum<span>generator</span></h1>
   </header>
 
+  <!-- Section 1 (Pagina de informações Pessoais)-->
   <section class="personal-info-container" id="personal-info-container">
-
-
-    <span class="title">INFORMAÇÕES PESSOAIS</span>
+    <span class="txt-white">INFORMAÇÕES PESSOAIS</span>
     <form class="form-1">
 
       <div class="input-container">
@@ -73,16 +72,12 @@
           <option value="">Ensino superior completo</option>
         </select>
       </div>
-
     </form>
 
-    <button class="btn" id="next-page">PROSSEGUIR</button>
-
+    <button class="btn-proceed" id="next-page">PROSSEGUIR</button>
   </section>
 
-
-
-
+  <!-- Section 2 (Pagina de informações Profissionais)-->
   <section class="professional-info-container ">
 
     <span class="title-section-2">INFORMAÇÕES PROFISSIONAIS</span>
@@ -90,42 +85,72 @@
 
       <div class="input-container">
         <label for="">Nome da empresa:</label>
-        <input type="text" class="txt-input" placeholder="">
+        <input type="text" class="txt-input" placeholder="Nome completo">
       </div>
 
-      <div class="input-container">
-
-        <div class="dates-container">
-
-          <div>
-            <label for="">Data de entrada</label>
-            <input type="text" class="txt-input" placeholder="">
-          </div>
-
-          <div>
-            <label for="">Data de saida</label>
-            <input type="text" class="txt-input" placeholder="">
-          </div>
-
+      <div class="dates-container">
+        <div class="dates">
+          <label class="txt-white" for="">Data de entrada</label>
+          <input class="date-input" type="date" >
         </div>
         
-      </div>
-      
-      <div class="input-container">
-        <label for="">Cargo</label>
-        <input type="text" class="txt-input" placeholder="">
+        <div class="dates">
+          <label class="txt-white" for="">Data de saida</label>
+          <input class="date-input" type="date" >
+        </div>
       </div>
 
-      <div>
+      <div class="input-container">
         <label for="">Cargo</label>
-        <input type="text" class="txt-input" placeholder="">
+        <input type="text" class="txt-input" placeholder="Cargo desejedo">
       </div>
+
+      <div class="input-container">
+        <label for="">Descrição</label>
+        <textarea type="text" rows="5" class="description-input"
+          placeholder="Uma breve descrição sobre suas atividades neste cargo..."></textarea>
+      </div>
+
+      <button class="clear-btn-experience" id="">
+        <img src="./icons8-lixo.svg" alt="icons8-lixo.svg">
+        <span>APAGAR EXPERIÊNCIA</span>
+      </button>
 
     </form>
 
   </section>
 
+  <!-- Section 4 (Informações Pessoais - Conclução do Curriculo)-->
+  <section class="professional-info-container ">
+
+    <div class="add-exp-container">
+      <span>* ADICIONAR EXPERIÊNCIA</span>
+      <span class="txt-white" for="">Quais desses outros serviços você gostaria de conhecer?</span>
+    </div>
+
+    <div class="checkbox-container">
+
+      <div>
+        <input type="checkbox" id="">
+        <label for="">FeedNoticias</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="">
+        <label for="">CambioHoje</label>
+      </div>
+
+    </div>
+
+  </section>
+
+  <div class="btn-resume-container">
+    <button class="resume-container">GERAR CURRICULO</button>
+  </div>
+
+
   <script src="./index.js"></script>
+
 </body>
 
 </html>
