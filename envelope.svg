@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg id="svg4776" viewBox="0 0 100 100" version="1.1" width="22px" height="22px" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <g id="layer1" transform="matrix(1, 0, 0, 1, -238.654144, -518.694153)" bx:origin="1 1.269231">
+    <path style="fill-opacity: 1; stroke: none; stroke-width: 3.77953; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1; fill: rgb(16, 185, 143);" d="M 8.1171875,17.5 49.990234,54.078125 91.853516,17.5 Z M 99.992188,23.332031 53.1875,64.226562 c -1.83055,1.59776 -4.585726,1.59786 -6.416016,0 L 0.0078125,23.361328 C 0.00675546,23.407904 0,23.453161 0,23.5 v 53 c 0,3.324 2.676,6 6,6 h 88 c 3.324,0 6,-2.676 6,-6 v -53 c 0,-0.05671 -0.0063,-0.111649 -0.0078,-0.167969 z" id="rect840" transform="translate(238.65414,518.69413)"/>
+    <path style="fill-opacity: 1; stroke: none; stroke-width: 6.08415; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1; fill: rgb(16, 185, 143);" d="m 337.75333,600.84504 c -0.27206,0.1835 -0.5912,0.3033 -0.93597,0.3381 0.34477,-0.0348 0.66391,-0.1546 0.93597,-0.3381 z" id="rect828"/>
+    <g id="layer1-7" transform="matrix(3.8189326,0,0,3.8189326,-1398.1391,-1597.4564)" style="fill:#ffffff">
+      <g id="g6564" transform="translate(-560.19,271.89)" style="fill:#ffffff"/>
+    </g>
+  </g>
+</svg>
