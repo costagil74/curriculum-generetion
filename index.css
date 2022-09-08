@@ -252,8 +252,7 @@ textarea {
     flex-direction: column;
     min-height: calc(100vh - 42px - 50px);
     align-items: center;
-
-    padding: 25px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
 }
 
 .form-3 {
@@ -320,7 +319,6 @@ hr {
     max-width: 800px;
     border-left: 3px solid var(--dark-gray);
     padding-left: 15px;
-
 }
 
 .txt-info {
@@ -332,23 +330,18 @@ hr {
     .info-container-wrapper {
         display: flex;
         flex-direction: column;
-        
     }
-
     .info-container-wrapper span {
         font-size: 12px;
     }
-
     .footer-container {
         display: flex;
         font-size: 12px;
         margin: auto;
     }
-
     .title-info-prof span {
         font-size: 14px;
     }
-
     .txt-info {
         font-size: 14px;
     }
