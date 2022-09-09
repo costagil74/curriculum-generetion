@@ -6,7 +6,22 @@
 // btnNextPage.addEventListener('click', loudNextPage)
 
 
-document.querySelector('#next-page').addEventListener('click', () => {
-    document.querySelector('#personal-info-container').style.display = 'none'; 
-})
+// document.querySelector('#next-page').addEventListener('click', () => {
+//     document.querySelector('#personal-info-container').style.display = 'none'; 
+// })
+const nextPage = document.querySelector('#next-page');
+const profInfoCont = document.querySelector('#professional-info-container');
+const personalInfCont = document.querySelector('#personal-info-container')
+const inputNome = document.querySelector('#input-nome');
+const inputEmail = document.querySelector('#input-email');
+const inputContato = document.querySelector('#input-contato');
+const inputIdade = document.querySelector('#input-idade');
+const inputCargo = document.querySelector('#input-cargo');
+const scholarity = document.querySelector('#scholarity');
 
+nextPage.addEventListener('click', proceedNextPage);
+
+function proceedNextPage() {
+    profInfoCont.classList.remove('none');
+    personalInfCont.classList.add('none')
+}

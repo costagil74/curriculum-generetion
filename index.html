@@ -17,32 +17,33 @@
 
   <!-- Section 1 (Pagina de informações Pessoais)-->
   <section class="personal-info-container" id="personal-info-container">
+
     <span class="txt-white">INFORMAÇÕES PESSOAIS</span>
     <form class="form-1">
 
       <div class="input-container">
         <label for="">Nome completo</label>
-        <input type="text" class="txt-input" placeholder="Nome completo">
+        <input type="text" class="txt-input" placeholder="Nome completo" id="input-nome">
       </div>
 
       <div class="input-container">
         <label for="">E-mail</label>
-        <input type="email" class="txt-input" placeholder="E-mail">
+        <input type="email" class="txt-input" placeholder="E-mail" id="input-email">
       </div>
 
       <div class="input-container">
         <label for="">Contato</label>
-        <input type="text" class="txt-input" placeholder="Contato">
+        <input type="text" class="txt-input" placeholder="Contato" id="input-contato">
       </div>
 
       <div class="input-container">
         <label for="">Idade</label>
-        <input type="text" class="txt-input" placeholder="Idade">
+        <input type="text" class="txt-input" placeholder="Idade" id="input-idade">
       </div>
 
       <div class="input-container">
         <label for="">Cargo desejado</label>
-        <input type="text" class="txt-input" placeholder="Cargo desejado">
+        <input type="text" class="txt-input" placeholder="Cargo desejado" id="input-cargo">
       </div>
 
       <div class="input-container">
@@ -76,51 +77,84 @@
 
     <button class="btn-proceed" id="next-page">PROSSEGUIR</button>
   </section>
-
+  
   <!-- Section 2 (Pagina de informações Profissionais)-->
-  <section class="professional-info-container ">
-
+  <section class="professional-info-container none" id="professional-info-container">
+    
     <span class="title-section-2">INFORMAÇÕES PROFISSIONAIS</span>
     <form class="form-2">
-
+      
       <div class="input-container">
         <label for="">Nome da empresa:</label>
         <input type="text" class="txt-input" placeholder="Nome completo">
       </div>
-
+      
       <div class="dates-container">
         <div class="dates">
           <label class="txt-white" for="">Data de entrada</label>
           <input class="date-input" type="date">
         </div>
-
+        
         <div class="dates">
           <label class="txt-white" for="">Data de saida</label>
           <input class="date-input" type="date">
         </div>
       </div>
-
+      
       <div class="input-container">
         <label for="">Cargo</label>
         <input type="text" class="txt-input" placeholder="Cargo desejedo">
       </div>
-
+      
       <div class="input-container">
         <label for="">Descrição</label>
         <textarea type="text" rows="5" class="description-input"
-          placeholder="Uma breve descrição sobre suas atividades neste cargo..."></textarea>
+        placeholder="Uma breve descrição sobre suas atividades neste cargo..."></textarea>
       </div>
-
+      
       <button class="clear-btn-experience" id="">
         <img src="./icons8-lixo.svg" alt="icons8-lixo.svg">
         <span>APAGAR EXPERIÊNCIA</span>
       </button>
-
     </form>
+    
+    <!-- ............................................................... -->
+    
+    <div>
+  
+      <div class="add-exp-container">
+        <span>* ADICIONAR EXPERIÊNCIA</span>
+        <span class="txt-white" for="">Quais desses outros serviços você gostaria de conhecer?</span>
+      </div>
+    
+      <div class="checkbox-container">
+        <div>
+          <input type="checkbox" id="">
+          <label for="">FeedNoticias</label>
+        </div>
+    
+        <div>
+          <input type="checkbox" id="">
+          <label for="">CambioHoje</label>
+        </div>
+      </div>
+    
+      <div class="btn-resume-container">
+        <button class="resume-container">GERAR CURRICULO</button>
+  
+      </div>
+  
+    </div>
+
   </section>
 
-  <!-- Section 3 (Informações proficionais 2) -->
-  <section class="section-3">
+  <!-- Section 3 (Informações Pessoais - Conclução do Curriculo)-->
+
+  <!-- <section class="professional-info-container ">
+  </section> -->
+
+  <!-- Section 4 (Informações proficionais 2) -->
+  <section class="info-pessoais-container">
     <form class="form-3">
 
       <div>
@@ -172,58 +206,33 @@
       </div>
 
       <div>
-        
-          <div class="container-txt-info">
-            <h2 class="txt-green">Nome da empresa</h2>
-            <span class="txt-info">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                when an unknown printer took a galley of type and scrambled it to make a 
-                type specimen book. It has survived not only five centuries, but also the 
-                leap into electronic typesetting, remaining essentially unchanged. 
-                It was popularised in the 1960s with the release of
-            </span>
-            <div class="txt-green">
+
+        <div class="container-txt-info">
+
+          <h2 class="txt-green">Nome da empresa</h2>
+
+          <span class="txt-info">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a
+            type specimen book. It has survived not only five centuries, but also the
+            leap into electronic typesetting, remaining essentially unchanged.
+            It was popularised in the 1960s with the release of
+          </span>
+
+          <div class="txt-green">
             <span>2020 até 2021</span>
           </div>
-          </div>
 
-          
-        
+        </div>
       </div>
 
     </form>
   </section>
   <div>
-    <footer class="footer-container">Obrigado por assinar mais 2 serviços conosco! =)</footer>
+    <footer class="footer">Obrigado por assinar mais 2 serviços conosco! =)</footer>
   </div>
 
-  <!-- Section 4 (Informações Pessoais - Conclução do Curriculo)-->
-  <section class="professional-info-container ">
-
-    <div class="add-exp-container">
-      <span>* ADICIONAR EXPERIÊNCIA</span>
-      <span class="txt-white" for="">Quais desses outros serviços você gostaria de conhecer?</span>
-    </div>
-
-    <div class="checkbox-container">
-
-      <div>
-        <input type="checkbox" id="">
-        <label for="">FeedNoticias</label>
-      </div>
-
-      <div>
-        <input type="checkbox" id="">
-        <label for="">CambioHoje</label>
-      </div>
-
-    </div>
-
-    <div class="btn-resume-container">
-      <button class="resume-container">GERAR CURRICULO</button>
-    </div>
-  </section>
 
   <script src="./index.js"></script>
 
