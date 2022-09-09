@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
 
 :root {
-    --green: #479C87;
+    --green: #2d8670;
     --white: #ffffff;
     --light-grey: #838383;
     --dark-gray: #555555;
@@ -111,12 +111,11 @@ h1 span {
 }
 
 .btn-proceed {
-    /* margin-bottom: 50px; */
     background-image: var(--green-gradient);
     color: var(--white);
     border: none;
     border-radius: 7px;
-    padding: 8px 15px;
+    padding: 5px 15px;
     cursor: pointer;
     transition: all ease-in-out 0.1s;
 }
@@ -217,10 +216,23 @@ textarea {
     gap: 20px;
 }
 
-.btn-generate-resume-container {
+.btn-generate-resume-voltar-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 40px 0px;
+    gap: 15px;
+}
+
+.btn-voltar {
+    display: flex;
+    background: var(--green-gradient);
+    border: none;
+    color: var(--white);
+    border-radius: 8px;
+    padding: 5px 54px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
 }
 
 .btn-generate-resume {
@@ -229,7 +241,7 @@ textarea {
     border: none;
     color: var(--white);
     border-radius: 8px;
-    padding: 10px 30px;
+    padding: 5px;
     cursor: pointer;
     transition: all 0.1s ease-in-out;
 }
@@ -262,7 +274,7 @@ textarea {
     width: 100%;
     max-width: 800px;
     border-radius: 15px;
-    padding: 20px;
+    padding: 0px 20px 10px 20px;
     gap: 15px;
 }
 
@@ -299,7 +311,19 @@ hr {
 
 .title-info-prof {
     display: flex;
-    padding: 40px 0px 0px 0px;
+    padding: 20px 0px 0px 0px;
+}
+
+.container-txt-info{
+    width: 100%;
+    max-width: 800px;
+    border-left: 3px solid var(--dark-gray);
+    padding-left: 15px;
+}
+
+.txt-info {
+    display: flex;
+    color: var(--white);
 }
 
 .footer {
@@ -313,16 +337,9 @@ hr {
     top: 10vh;
 }
 
-.container-txt-info{
-    width: 100%;
-    max-width: 800px;
-    border-left: 3px solid var(--dark-gray);
-    padding-left: 15px;
-}
-
-.txt-info {
+.btn-page-all-info-container {
     display: flex;
-    color: var(--white);
+    margin: 10px 0px;
 }
 
 @media (max-width: 450px) {

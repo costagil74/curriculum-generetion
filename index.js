@@ -32,6 +32,6 @@ function continuePageInfoProf() {
 
 function GenerateResume(){
     contPageAllInfo.classList.remove('none');
-    profInfoCont.classList.add('none')
-    footerPageAllInfo.classList.remove('none')
+    profInfoCont.classList.add('none');
+    footerPageAllInfo.classList.remove('none');
 }
