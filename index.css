@@ -50,7 +50,7 @@ h1 span {
     align-items: center;
     background: var(--black);
     width: 100%;
-    min-height: calc(100vh -50px);
+    min-height: calc(100vh - 50px);
     padding: 25px;
     gap: 25px;
     
@@ -217,13 +217,13 @@ textarea {
     gap: 20px;
 }
 
-.btn-resume-container {
+.btn-generate-resume-container {
     display: flex;
     justify-content: center;
     margin: 40px 0px;
 }
 
-.resume-container {
+.btn-generate-resume {
     display: flex;
     background-image: var(--green-gradient);
     border: none;
@@ -248,8 +248,8 @@ textarea {
     }
 }
 
-.info-pessoais-container {
-    display: none;
+.container-page-all-info {
+    display: flex;
     flex-direction: column;
     min-height: calc(100vh - 42px - 50px);
     align-items: center;
@@ -262,7 +262,6 @@ textarea {
     width: 100%;
     max-width: 800px;
     border-radius: 15px;
-    margin: 20px;
     padding: 20px;
     gap: 15px;
 }
@@ -304,13 +303,13 @@ hr {
 }
 
 .footer {
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
     color: var(--white);
     background: var(--green-gradient);
     width: 100vw;
-    padding: 11px;
+    padding: 10px 0px 10px 0px;
     top: 10vh;
 }
 
@@ -349,4 +348,4 @@ hr {
 
 .none {
     display: none;
-}
+}  
