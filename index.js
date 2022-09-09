@@ -13,6 +13,8 @@ const nextPage = document.querySelector('#next-page');
 const profInfoCont = document.querySelector('#professional-info-container');
 const personalInfCont = document.querySelector('#personal-info-container');
 const btnGenerateResume = document.querySelector('#btn-generate-resume');
+const btnBackProfInfo = document.querySelector('#btn-back-prof-info');
+const btnBackPageAllInfo = document.querySelector('#btn-back-page-all-info')
 const contPageAllInfo = document.querySelector('#container-page-all-info');
 const footerPageAllInfo = document.querySelector('#footer');
 const inputNome = document.querySelector('#input-nome');
@@ -24,6 +26,8 @@ const scholarity = document.querySelector('#scholarity');
 
 nextPage.addEventListener('click', continuePageInfoProf);
 btnGenerateResume.addEventListener('click', GenerateResume);
+btnBackProfInfo.addEventListener('click', backPersonalInfo);
+btnBackPageAllInfo.addEventListener('click', backProfInfo)
 
 function continuePageInfoProf() {
     profInfoCont.classList.remove('none');
@@ -34,4 +38,15 @@ function GenerateResume(){
     contPageAllInfo.classList.remove('none');
     profInfoCont.classList.add('none');
     footerPageAllInfo.classList.remove('none');
+}
+
+function backProfInfo() {
+    profInfoCont.classList.remove('none');
+    contPageAllInfo.classList.add('none')
+    footerPageAllInfo.classList.add('none')
+}
+
+function backPersonalInfo() {
+    profInfoCont.classList.add('none')
+    personalInfCont.classList.remove('none')
 }
