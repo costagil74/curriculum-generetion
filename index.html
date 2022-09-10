@@ -19,31 +19,31 @@
   <section class="personal-info-container" id="personal-info-container">
 
     <span class="txt-white">INFORMAÇÕES PESSOAIS</span>
-    <form class="form-1">
+    <form class="form-1" id="personal-form">
 
       <div class="input-container">
         <label for="">Nome completo</label>
-        <input type="text" class="txt-input" placeholder="Nome completo" id="input-nome">
+        <input type="text" class="txt-input"name='nome' placeholder="Nome completo" id="input-nome">
       </div>
 
       <div class="input-container">
         <label for="">E-mail</label>
-        <input type="email" class="txt-input" placeholder="E-mail" id="input-email">
+        <input type="email" class="txt-input" name="email" placeholder="E-mail" id="input-email">
       </div>
 
       <div class="input-container">
         <label for="">Contato</label>
-        <input type="text" class="txt-input" placeholder="Contato" id="input-contato">
+        <input type="text" class="txt-input" name="contato" placeholder="Contato" id="input-contato">
       </div>
 
       <div class="input-container">
         <label for="">Idade</label>
-        <input type="text" class="txt-input" placeholder="Idade" id="input-idade">
+        <input type="text" class="txt-input" name="idade" placeholder="Idade" id="input-idade">
       </div>
 
       <div class="input-container">
         <label for="">Cargo desejado</label>
-        <input type="text" class="txt-input" placeholder="Cargo desejado" id="input-cargo">
+        <input type="text" class="txt-input" name="cargo" placeholder="Cargo desejado" id="input-cargo">
       </div>
 
       <div class="input-container">
@@ -66,18 +66,18 @@
 
       <div class="input-container">
         <label for="scholarity">Escolaridade</label>
-        <select class="select-input" name="" id="scholarity">
+        <select class="select-input" name="escolaridade" id="scholarity">
           <option value="Ensino básico">Ensino básico</option>
           <option value="Ensino médio">Ensino médio</option>
           <option value="Ensino superior imcompleto">Ensino superior imcompleto</option>
           <option value="Ensino superior completo">Ensino superior completo</option>
         </select>
       </div>
+      <div class="button-wrapper">
+        <button class="btn-style-green" id="next-page" type="submit">PROSSEGUIR</button>
+      </div>
     </form>
 
-    <div>
-      <button class="btn-style-green" id="next-page">PROSSEGUIR</button>
-    </div>
 
   </section>
 
