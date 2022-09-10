@@ -53,7 +53,7 @@ h1 span {
     min-height: calc(100vh - 50px);
     padding: 25px;
     gap: 25px;
-    
+
 }
 
 .txt-white {
@@ -110,7 +110,7 @@ h1 span {
     outline: none;
 }
 
-.btn-style-green{
+.btn-style-green {
     background-image: var(--green-gradient);
     color: var(--white);
     border: none;
@@ -294,7 +294,7 @@ hr {
     padding: 20px 0px 0px 0px;
 }
 
-.container-txt-info{
+.container-txt-info {
     width: 100%;
     max-width: 800px;
     border-left: 3px solid var(--dark-gray);
@@ -331,15 +331,19 @@ hr {
         display: flex;
         flex-direction: column;
     }
+
     .info-container-wrapper span {
         font-size: 12px;
     }
+
     .footer span {
         font-size: 12px;
     }
+
     .title-info-prof span {
         font-size: 14px;
     }
+
     .txt-info {
         font-size: 14px;
     }
@@ -347,4 +351,4 @@ hr {
 
 .none {
     display: none;
-}  
+}
