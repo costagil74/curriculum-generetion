@@ -2,7 +2,7 @@ const nextPage = document.querySelector('#next-page');
 const profInfoCont = document.querySelector('#professional-info-container');
 const personalInfCont = document.querySelector('#personal-info-container');
 const btnGenerateResume = document.querySelector('#btn-generate-resume');
-const btnBackProfInfo = document.querySelector('#btn-back-prof-info');
+const btnBackPersonalPage = document.querySelector('#btn-back-personal-page');
 const btnBackPageAllInfo = document.querySelector('#btn-back-page-all-info');
 const contPageAllInfo = document.querySelector('#container-page-all-info');
 const footerPageAllInfo = document.querySelector('#footer');
@@ -14,11 +14,13 @@ const personalForm = document.querySelector('#personal-form');
 // const inputCargo = document.querySelector('#input-cargo');
 // const scholarity = document.querySelector('#scholarity');
 
+const renderProfesionalPage = () => {
+    personalInfCont.classList.add('none')
+    profInfoCont.classList.remove('none')
+}
 
-personalForm.addEventListener('submit', (event) => {
-    event.preventDefault()
-    const form = event.target
-    const personalData = {
+const getPersonalData = (form) => {
+    return {
         nome: form.nome.value,
         email: form.email.value,
         contato: form.contato.value,
@@ -27,26 +29,15 @@ personalForm.addEventListener('submit', (event) => {
         sexo: document.querySelector('input[name="sexo"]:checked').value,
         escolaridade: form.escolaridade.value,
     }
-    personalInfCont.classList.add('none')
-    profInfoCont.classList.remove('none')
+}
+
+personalForm.addEventListener('submit', (event) => {
+    event.preventDefault()
+    const personalData = getPersonalData(event.target)
+
+    console.log(personalData)
+    renderProfesionalPage()
 })
-
-
-// nextPage.addEventListener('click', () => {
-//     const sexo = document.querySelector('input[name="sexo"]:checked')
-//     // profInfoCont.classList.remove('none');
-//     // personalInfCont.classList.add('none');
-//     const personalData = {
-//         nome: inputNome.value,
-//         email: inputEmail.value,
-//         contato: inputContato.value,
-//         idade: inputIdade.value,
-//         cargo: inputCargo.value,
-//         escolaridade: scholarity.value,
-//         sexo: sexo.value,
-//     }
-//     console.log(personalData)
-// });
 
 btnGenerateResume.addEventListener('click', () => {
     contPageAllInfo.classList.remove('none');
@@ -59,8 +50,9 @@ btnBackPageAllInfo.addEventListener('click', () => {
     footerPageAllInfo.classList.add('none');
 });
 
-btnBackProfInfo.addEventListener('click', () => {
+btnBackPersonalPage.addEventListener('click', () => {
     profInfoCont.classList.add('none');
     personalInfCont.classList.remove('none');
+    console.log('btnmm')
 });
 
