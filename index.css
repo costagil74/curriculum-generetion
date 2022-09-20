@@ -53,7 +53,7 @@ h1 span {
     min-height: calc(100vh - 50px);
     padding: 25px;
     gap: 25px;
-    
+
 }
 
 .txt-white {
@@ -110,12 +110,17 @@ h1 span {
     outline: none;
 }
 
-.btn-style-green{
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-style-green {
     background-image: var(--green-gradient);
     color: var(--white);
     border: none;
     border-radius: 7px;
-    padding: 5px 15px;
+    padding: 8px;
     cursor: pointer;
     transition: all ease-in-out 0.1s;
 }
@@ -124,7 +129,7 @@ h1 span {
     transform: scale(1.1);
 }
 
-.professional-info-container {
+.profesional-info-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -181,16 +186,28 @@ h1 span {
 
 .clear-btn-experience {
     display: flex;
-    display: flex;
     align-items: center;
     background: var(--red);
     color: var(--white);
     border: none;
     border-radius: 7px;
-    font-size: 1.6em;
+    /* font-size: 1.6em; */
     gap: 10px;
-    padding: 5px 15px;
+    padding: 7px 20px;
     width: fit-content;
+    cursor: pointer;
+    transition: all ease-in-out 0.1s;
+}
+
+.clear-btn-experience:hover{
+    transform: scale(1.1);
+}
+
+.container-experience{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 27px;
 }
 
 .add-exp-container {
@@ -217,7 +234,7 @@ textarea {
     gap: 20px;
 }
 
-.btn-generate-resume-voltar-container {
+.btn-generate-resume-back-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -225,19 +242,6 @@ textarea {
     gap: 15px;
 }
 
-@media (max-width: 450px) {
-    .dates-container {
-        flex-direction: column;
-    }
-
-    .clear-btn-experience {
-        margin: auto;
-    }
-
-    .clear-btn-experience span {
-        font-size: 14px;
-    }
-}
 
 .container-page-all-info {
     display: flex;
@@ -294,7 +298,7 @@ hr {
     padding: 20px 0px 0px 0px;
 }
 
-.container-txt-info{
+.container-txt-info {
     width: 100%;
     max-width: 800px;
     border-left: 3px solid var(--dark-gray);
@@ -331,20 +335,51 @@ hr {
         display: flex;
         flex-direction: column;
     }
+
     .info-container-wrapper span {
         font-size: 12px;
     }
+    
     .footer span {
         font-size: 12px;
     }
+
     .title-info-prof span {
         font-size: 14px;
     }
+    
     .txt-info {
         font-size: 14px;
     }
+    
+    .dates-container {
+        flex-direction: column;
+    }
+
+    .container-experience {
+        gap: 10px;
+
+    }
+
+    .clear-btn-experience {
+        font-size: 14px;
+        margin: auto;
+        padding: 5px;
+    }
+
+    .add-exp {
+        font-size: 14px;
+        margin: auto;
+        padding: 5px;
+    }
+
+    .btn-generate-resume-back-container {
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
 
 .none {
     display: none;
-}  
+}

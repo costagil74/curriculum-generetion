@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gerador de Corriculo</title>
+  <title>Gerador de Curriculo</title>
   <link rel="stylesheet" href="./index.css">
 </head>
 
@@ -16,34 +16,35 @@
   </header>
 
   <!-- Section 1 (Pagina de informações Pessoais)-->
-  <section class="personal-info-container" id="personal-info-container">
-
-    <span class="txt-white">INFORMAÇÕES PESSOAIS</span>
-    <form class="form-1">
+  <section class="personal-info-container " id="personal-info-container">
+  
+  <span class="txt-white">INFORMAÇÕES PESSOAIS</span>
+    <form class="form-1" id="personal-form">
 
       <div class="input-container">
         <label for="">Nome completo</label>
-        <input type="text" class="txt-input" placeholder="Nome completo" id="input-nome">
+        <input type="text" class="txt-input" name='name' placeholder="Nome completo" id="input-name">
+        <small>Error</small>
       </div>
 
       <div class="input-container">
         <label for="">E-mail</label>
-        <input type="email" class="txt-input" placeholder="E-mail" id="input-email">
+        <input type="email" class="txt-input" name="email" placeholder="E-mail" id="input-email">
       </div>
 
       <div class="input-container">
         <label for="">Contato</label>
-        <input type="text" class="txt-input" placeholder="Contato" id="input-contato">
+        <input type="text" class="txt-input" name="contact" placeholder="Contato" id="input-contac">
       </div>
 
       <div class="input-container">
         <label for="">Idade</label>
-        <input type="text" class="txt-input" placeholder="Idade" id="input-idade">
+        <input type="text" class="txt-input" name="age" placeholder="Idade" id="input-age">
       </div>
 
       <div class="input-container">
         <label for="">Cargo desejado</label>
-        <input type="text" class="txt-input" placeholder="Cargo desejado" id="input-cargo">
+        <input type="text" class="txt-input" name="office" placeholder="Cargo desejado" id="input-Office">
       </div>
 
       <div class="input-container">
@@ -52,12 +53,12 @@
 
         <div class="radios-container">
           <div>
-            <input type="radio" class="input-radio" name="sexo" id="masc-radio" value="m">
+            <input type="radio" class="input-radio" name="sexo" id="masc-radio" value="Masculino" checked>
             <label for="masc-radio">Masculino</label>
           </div>
 
           <div>
-            <input type="radio" class="input-radio" name="sexo" id="fem-radio" value="f">
+            <input type="radio" class="input-radio" name="sexo" id="fem-radio" value="Feminino">
             <label for="fem-radio">Feminino</label>
           </div>
         </div>
@@ -66,65 +67,66 @@
 
       <div class="input-container">
         <label for="scholarity">Escolaridade</label>
-        <select class="select-input" name="" id="scholarity">
-          <option value="">Ensino básico</option>
-          <option value="">Ensino médio</option>
-          <option value="">Ensino superior imcompleto</option>
-          <option value="">Ensino superior completo</option>
+        <select class="select-input" name="escolaridade" id="scholarity">
+          <option value="Opções">Opções</option>
+          <option value="Ensino básico">Ensino básico</option>
+          <option value="Ensino médio">Ensino médio</option>
+          <option value="Ensino superior imcompleto">Ensino superior incompleto</option>
+          <option value="Ensino superior completo">Ensino superior completo</option>
         </select>
       </div>
+      <div class="button-wrapper">
+        <button class="btn-style-green" type="submit">PROSSEGUIR</button>
+      </div>
     </form>
-
-    <div>
-      <button class="btn-style-green" id="next-page">PROSSEGUIR</button>
-    </div>
-    
   </section>
 
   <!-- Section 2 (Informações Profissionais)-->
-  <section class="professional-info-container none" id="professional-info-container">
+  <section class="profesional-info-container none" id="profesional-info-container">
 
     <span class="title-section-2">INFORMAÇÕES PROFISSIONAIS</span>
-    <form class="form-2">
+    <form class="form-2" id="profesional-form">
 
       <div class="input-container">
         <label for="">Nome da empresa:</label>
-        <input type="text" class="txt-input" placeholder="Nome completo">
+        <input type="text" class="txt-input" name="firm" id="firm" placeholder="Nome da empresa">
       </div>
 
       <div class="dates-container">
         <div class="dates">
           <label class="txt-white" for="">Data de entrada</label>
-          <input class="date-input" type="date">
+          <input class="date-input" name="entry" type="date" id="entry">
         </div>
 
         <div class="dates">
           <label class="txt-white" for="">Data de saida</label>
-          <input class="date-input" type="date">
+          <input class="date-input" name="exit" type="date">
         </div>
       </div>
 
       <div class="input-container">
         <label for="">Cargo</label>
-        <input type="text" class="txt-input" placeholder="Cargo desejedo">
+        <input type="text" class="txt-input" name="post" placeholder="Cargo exercido" id="post">
       </div>
 
       <div class="input-container">
         <label for="">Descrição</label>
-        <textarea type="text" rows="5" class="description-input"
-          placeholder="Uma breve descrição sobre suas atividades neste cargo..."></textarea>
+        <textarea type="text" rows="5" class="description-input" name="description"
+          placeholder="Uma breve descrição sobre suas atividades neste cargo..." id="description"></textarea>
       </div>
 
-      <button class="clear-btn-experience" id="remove-exp" type="button">
-        <img src="./icons8-lixo.svg" alt="icons8-lixo.svg">
-        <span>APAGAR EXPERIÊNCIA</span>
-      </button>
+      <div class="container-experience">
+        <button class="btn-style-green add-exp" id="add-experience" type="submit">ADICIONAR EXPERIÊNCIA</button>
+
+        <button class="clear-btn-experience" id="remove-experience" type="button">APAGAR EXPERIÊNCIA</button>
+          
+      </div>
     </form>
 
     <div>
 
       <div class="add-exp-container">
-        <span>* ADICIONAR EXPERIÊNCIA</span>
+        
         <span class="txt-white" for="">Quais desses outros serviços você gostaria de conhecer?</span>
       </div>
 
@@ -140,8 +142,8 @@
         </div>
       </div>
 
-      <div class="btn-generate-resume-voltar-container">
-        <button class="btn-style-green" id="btn-back-prof-info">VOLTAR</button>
+      <div class="btn-generate-resume-back-container">
+        <button class="btn-style-green" id="back-btn-personal-info-page">VOLTAR</button>
         <button class="btn-style-green" id="btn-generate-resume">GERAR CURRICULO</button>
       </div>
 
@@ -153,11 +155,11 @@
     <form class="form-3">
 
       <div>
-        <h1 class="name">Gil Costa</h1>
+        <h1 class="name" id="all-info-name">Nome Completo</h1>
       </div>
 
       <div>
-        <span class="txt-white">Desenvolvedor web</span>
+        <span class="txt-white" id="all-info-office"></span>
       </div>
       <hr>
 
@@ -169,29 +171,29 @@
         <div>
           <div class="info-pessoal">
             <img src="./envelope.svg" alt="">
-            <span class="txt-white">E-mail: <span class="txt-green">gilcosta@gmail</span></span>
+            <span class="txt-white">E-mail: <span class="txt-green" id="all-info-email">@mail</span></span>
           </div>
 
           <div class="info-pessoal">
             <img src="./capelo.svg" alt="">
-            <span class="txt-white">Escolaridade: <span class="txt-green">Ensino médio completo</span></span>
+            <span class="txt-white">Escolaridade: <span class="txt-green" id="all-info-schooling"></span></span>
           </div>
 
           <div class="info-pessoal">
             <img src="./telefone.svg" alt="">
-            <span class="txt-white">Contato: <span class="txt-green">(00) 00000 0000</span></span>
+            <span class="txt-white">Contato: <span class="txt-green" id="all-info-contact">(00) 00000 0000</span></span>
           </div>
         </div>
 
         <div>
           <div class="info-pessoal">
             <img src="./masculino-feminino.svg" alt="">
-            <span class="txt-white">Sexo: <span class="txt-green">Masculino</span></span>
+            <span class="txt-white">Sexo: <span class="txt-green" id="all-info-sex">Masculino</span></span>
           </div>
 
           <div class="info-pessoal">
             <img src="./calendario.svg" alt="">
-            <span class="txt-white">Idade: <span class="txt-green">30 anos</span></span>
+            <span class="txt-white">Idade: <span class="txt-green" id="all-info-age">00</span></span>
           </div>
         </div>
       </div>
@@ -204,19 +206,14 @@
 
         <div class="container-txt-info">
 
-          <h2 class="txt-green">Nome da empresa</h2>
+          <h2 class="txt-green" id="name-firm">Nome da empresa</h2>
 
-          <span class="txt-info">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-            when an unknown printer took a galley of type and scrambled it to make a
-            type specimen book. It has survived not only five centuries, but also the
-            leap into electronic typesetting, remaining essentially unchanged.
-            It was popularised in the 1960s with the release of
+          <span class="txt-info" id="text-description">
+            
           </span>
 
-          <div class="txt-green">
-            <span>2020 até 2021</span>
+          <div class="txt-green" id="exp-date">
+            <span>00/00/0000 até 00/00/0000</span>
           </div>
 
         </div>
@@ -225,15 +222,15 @@
     </form>
 
     <div class="btn-page-all-info-container">
-      <button class="btn-style-green" id="btn-back-page-all-info">VOLTAR</button>
+      <button class="btn-style-green" id="back-btn-profecional-info-page">VOLTAR</button>
     </div>
 
   </section>
 
 
   <div>
-    <footer class="footer none" id="footer">
-      <span>Obrigado por assinar mais 2 serviços conosco! =)</span>
+    <footer class="footer none" id="footer-page-all-info">
+      <span id="footer-content">Obrigado por assinar mais 2 serviços conosco! =)</span>
     </footer>
   </div>
 
@@ -244,4 +241,10 @@
 
 </html>
 
-<!-- document.querySelector('input[name=reload_mode]:checked') -->
+
+<!-- Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+when an unknown printer took a galley of type and scrambled it to make a
+type specimen book. It has survived not only five centuries, but also the
+leap into electronic typesetting, remaining essentially unchanged.
+It was popularised in the 1960s with the release of -->
