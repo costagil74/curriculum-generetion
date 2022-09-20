@@ -29,6 +29,7 @@ const removeExperience = document.querySelector('#remove-experience');
 const firm = document.querySelector('#firm');
 const post = document.querySelector('#post');
 const description = document.querySelector('#description');
+const divInserted = document.querySelector('#elementos-inseridos');
 
 
 const renderProfesionalPage = () => {
@@ -112,15 +113,63 @@ const getProfesionalInfo = (form) => {
     }
 }
 
+
+
+
+
+
+const jobsList = [];
+
 profesionalForm.addEventListener('submit', (event) => {
     event.preventDefault()
 
     const profesionalData = getProfesionalInfo(event.target);
+    jobsList.push(profesionalData)
 
-     nameFirm.innerText = profesionalData.empresa
-     textDescription.innerText = profesionalData.texto
-     expDate.innerText = `${profesionalData.entrada} até ${profesionalData.saida}`
+
+    divInserted.innerHTML = '';
+
+
+    for (let i = 0; i < jobsList.length; i++) {
+        const divJobWrapper = document.createElement('div');
+    
+        const divJobData = document.createElement('div');
+        divJobData.classList.add('container-txt-info');
+        divJobWrapper.appendChild(divJobData);
+    
+        const h2CompanyName = document.createElement('h2');
+        h2CompanyName.classList.add('txt-green');
+        h2CompanyName.innerText = jobsList[i].empresa;
+        // não colocamos Id pq não precisamos usar o querySelector para pegar o elemento no DOM
+        // pois como criamos já estamos com ele acessivel na variável h2
+        divJobData.appendChild(h2CompanyName);
+    
+        const spanJobDescription = document.createElement('span');
+        spanJobDescription.classList.add('txt-info');
+        spanJobDescription.innerText = jobsList[i].texto;
+        divJobData.appendChild(spanJobDescription);
+    
+        const divDate = document.createElement('div');
+        divJobData.classList.add('txt-green');
+    
+        const spanDate = document.createElement('span');
+        spanDate.innerText = `${jobsList[i].entrada} até ${jobsList[i].saida}`;
+        divDate.appendChild(spanDate);
+    
+        divJobData.appendChild(divDate);
+        divJobData.appendChild(divDate);
+    
+        divInserted.appendChild(divJobWrapper)
+            // gera HTML dos dados do resumo
+    }
 })
+
+
+
+
+
+
+
 
 backBtnPersonalInfoPage.addEventListener('click', () => {
     profesionalInfoContainer.classList.add('none')
